@@ -18,23 +18,25 @@
             h1 {
                 font-family: verdana;
                 font-size: 60px;
+                text-align: center; /* Ensure it's centered */
             }
             .container {
                 padding: 20px;
             }
             .box {
                 border: 3px solid brown;
-                margin-right: 400px;
+                margin: auto; /* Centering the box */
                 padding: 20px;
                 border-radius: 20px;
                 border-spacing: 10px;
+                max-width: 600px; /* Limit the width to prevent overflow */
             }
             .header {
-                margin-right: 350px;
                 border: 1px solid brown;
                 border-radius: 20px;
                 text-align: center;
                 background-color: brown;
+                padding: 10px;
             }
             .paragraph {
                 padding: 20px;
@@ -42,6 +44,7 @@
             }
             p {
                 font-size: 24px;
+                text-align: center;
             }
             p:before {
                 content: ' \21AA';
@@ -61,16 +64,14 @@
                 h1 {
                     font-size: 40px;
                 }
+                p {
+                    font-size: 18px;
+                }
                 .box {
-                    margin-right: 20px;
                     padding: 10px;
                 }
                 .header {
-                    margin-right: 20px;
-                    padding: 10px;
-                }
-                p {
-                    font-size: 18px;
+                    padding: 5px;
                 }
                 .hr {
                     padding: 20px;
