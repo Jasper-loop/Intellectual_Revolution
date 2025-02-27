@@ -2,39 +2,66 @@
 <html>
     <head>
         <meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Intellectual Revolution</title>
         <style>
-            body{
+            body {
                 background-image: url("https://i.pinimg.com/736x/4b/66/59/4b665975dffe716b78dbd94d3ba56971.jpg");
-                background-repeat:no-repeat;
-                background-size:cover;
-                justify-content: center center;
-                height:100vh;
-                width:100vw;
-                overflow-y:hidden;
-                overflow-x:hidden;
+                background-repeat: no-repeat;
+                background-size: cover;
+                justify-content: center;
+                height: 100vh;
+                width: 100vw;
+                overflow-y: hidden;
+                overflow-x: hidden;
             }
-            .container{
-                padding:100px;
+            .container {
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
             }
-            .box{
-                margin-right:200px;
-                margin-left:200px;   
+            .box {
+                max-width: 800px;
+                width: 100%;
+                padding: 20px;
             }
-            .box1{
-                border:2px solid brown;
-                border-radius:20px;
-                margin-left:200px;
-                margin-right:200px;
+            .box1 {
+                border: 2px solid brown;
+                border-radius: 20px;
                 background-color: rgb(221, 93, 93);
+                padding: 20px;
+                width: 100%;
+                box-sizing: border-box;
             }
-            p{
-                font-size:30px;
+            p {
+                font-size: 24px;
+                margin: 0;
             }
-            img{
-                border:none;
-                border-radius:40px;
+            img {
+                border: none;
+                border-radius: 40px;
+                max-width: 100%;
+                height: auto;
+                margin-right: 20px;
+                float: left;
+            }
+
+            /* Responsive styles */
+            @media screen and (max-width: 600px) {
+                .container {
+                    padding: 10px;
+                }
+                .box {
+                    padding: 10px;
+                }
+                .box1 {
+                    padding: 10px;
+                }
+                p {
+                    font-size: 18px;
+                }
             }
         </style>
     </head>
@@ -42,7 +69,7 @@
     <div class="container">
         <div class="box1">
         <div class="box">
-            <p><img src="https://i.pinimg.com/474x/3d/95/b2/3d95b2a8b4e32a623398e3aff32aedb9.jpg" alt="socrates" height="300px" width="300px" float="left">Socrates introduced a new method of questioning and learning that changed how people thought about themselves and the world. His Socratic method encouraged people to examine their beliefs and seek the truth.</p>
+            <p><img src="https://i.pinimg.com/474x/3d/95/b2/3d95b2a8b4e32a623398e3aff32aedb9.jpg" alt="socrates" height="300px" width="300px">Socrates introduced a new method of questioning and learning that changed how people thought about themselves and the world. His Socratic method encouraged people to examine their beliefs and seek the truth.</p>
         </div>
         </div>
     </div>    
