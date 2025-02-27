@@ -18,6 +18,7 @@
             margin-right: 250px;
             padding: 10px;
             background-color: brown;
+            text-align: center; /* Ensure it's centered */
         }
         a {
             text-decoration: none;
@@ -29,10 +30,11 @@
             background-size: cover;
             width: 100vw;
             height: 100vh;
-            justify-content: center ;
-            align-items: center;
-            overflow-x: hidden;
-            overflow-y: hidden;
+            display: flex; /* Added display flex */
+            flex-direction: column;
+            justify-content: center; /* Center contents vertically */
+            align-items: center; /* Center contents horizontally */
+            overflow: hidden;
         }
         .paragraph {
             color: brown;
@@ -48,6 +50,8 @@
         hr {
             border: 1px solid brown;
         }
+
+        /* Responsive styles */
         @media screen and (max-width: 600px) {
             h1 {
                 font-size: 50px;
@@ -66,7 +70,7 @@
         </style>
     </head>
     <body>
-        <h1 align="center"><a href="P2.html" target="_self">Intellectual<br>Revolution</a></h1>
+        <h1><a href="P2.html" target="_self">Intellectual<br>Revolution</a></h1>
         <div class="container1">
             <div class="paragraph">
                 <p><strong>By: <span class="Fp">Ian Jasper Mirandilla</span></strong></p>
