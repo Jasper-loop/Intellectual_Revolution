@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Intellectual Revolution</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             background-image: url("https://i.pinimg.com/736x/4b/66/59/4b665975dffe716b78dbd94d3ba56971.jpg");
@@ -10,26 +11,26 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             width: 100vw;
             margin: 0;
-            overflow: hidden;
+            overflow-x: hidden;
             box-sizing: border-box;
         }
         .container {
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
-            max-width: 90%;
+            max-width: 95%;
             box-sizing: border-box;
         }
         .image {
             border: 5px solid brown;
             padding: 20px;
             border-radius: 20px;
-            margin: 0 auto;
-            text-align: center;
+            margin: 20px auto;
             box-sizing: border-box;
+            text-align: center;
         }
         [title="copernicus"] {
             font-weight: bold;
@@ -56,12 +57,13 @@
         }
         button {
             padding: 5px;
-            margin: 10px auto;
-            width: auto;
+            margin: auto;
+            width:10%;
             font-weight: bold;
             border-radius: 10px;
             background-color: brown;
             color: black;
+            display: block;
         }
         .sl {
             font-size: 15px;
@@ -69,51 +71,66 @@
         .name {
             border: 3px solid brown;
             border-radius: 20px;
-            margin: 10px auto;
+            margin: 20px auto;
+            width: fit-content;
             padding: 10px;
-            max-width: 80%;
-            box-sizing: border-box;
+            text-align: center;
         }
 
+        /* Media Queries for Responsiveness */
+        @media (max-width: 1200px) {
+            .image {
+                margin-right: 500px;
+            }
+        }
+        @media (max-width: 992px) {
+            .image {
+                margin-right: 300px;
+            }
+        }
         @media (max-width: 768px) {
             .image {
-                margin-right: 0;
-                padding: 20px;
-                width: auto;
+                margin-right: 100px;
             }
-            img {
-                height: auto;
-                max-width: 100%;
+            h1 {
+                font-size: 50px;
             }
-            .container {
-                max-width: 100%;
+        }
+        @media (max-width: 576px) {
+            .image {
+                margin: auto;
+                width: 90%;
                 padding: 10px;
             }
-            button {
-                width: auto;
+            .paragraph {
+                padding: 10px;
             }
-            .name {
-                margin: 10px auto;
-                max-width: 100%;
+            h1 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 20px;
+            }
+            button {
+                width: 15%;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box"></div>
         <div class="image">
             <div class="space">
                 <div class="name" align="center">
-                    <h2 style="font-size:18px;"><strong>Freudian Revolution</strong></h2>
+                    <h2 style="font-size: 18px;"><strong>Copernican Revolution</strong></h2>
                 </div>
             </div>
-            <p title="copernicus"><img src="https://i.pinimg.com/736x/31/20/f4/3120f49615fddd178e80ed2f3fa729b1.jpg" alt="Nicolas" height="300px" width="250px" float="left" title="Isaac Newton"><dfn>Sigmund Freud, an Austrian neurologist born in 1856, is often referred to as the "father of modern psychology." Freud revolutionized how we think about and treat mental health conditions. Freud founded psychoanalysis as a way of listening to patients and better understanding how their minds work.</dfn></p>
-            <p title="paragraph">An Austrian neurologist who is often referred to as the father of <a href="Psycho.html">psychoanalysis.</a></p>
-            <p title="paragraph">Freud introduced the <a href="unconscius.html">unconscious mind</a> idea that much of human behavior is influenced by unconscious desires, thoughts, and memories.</p>
-            <p title="paragraph">Freud's psychoanalytic theory introduced the idea that unconscious desires and conflicts influence human behavior. He developed techniques such as dream analysis and free association to explore the unconscious mind</p>
+            <p title="copernicus"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Nikolaus_Kopernikus_MOT.jpg/1200px-Nikolaus_Kopernikus_MOT.jpg" alt="Nicolas" height="300px" width="250px" float="left" title="Nicolas Copernicus"><dfn>Nicolaus Copernicus, born on February 19, 1473, in Toruń, Poland, was a Renaissance polymath. He studied liberal arts, including astronomy and astrology, at the University of Kraków and later pursued medicine and law at the University of Bologna and the University of Ferrara.</dfn></p>
+            <p title="paragraph">The heliocentric model, proposed by Nicolaus Copernicus, is a cosmological theory that places the Sun at the center of the solar system, with Earth and other planets orbiting around it.</p>
+            <p title="paragraph">Opposite of <a href="geocentric.html" target="_blank">geocentric model</a>, which places Earth at the center, is the opposite of the heliocentric model.</p>
+            <p title="paragraph">The <a href="heliocentric.html" target="_blank">heliocentric model</a> provided a more accurate explanation of the observed movements of planets and laid the foundation for modern astronomy.</p>
             <div class="butt" align="right">
-                <button type="button" class="button" align="right"><b><a href="P7.html" title="next"><span class="sl">></span></a></b></button>
+                <a href="P5.html" title="next"><button type="button" class="button" align="right"><b><span class="sl">></span></b></button></a>
             </div>
         </div>
     </div>
