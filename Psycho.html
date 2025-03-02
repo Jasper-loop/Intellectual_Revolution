@@ -1,44 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Intellectual Revolution</title>
-        <style>
-        body{
-            background-image:url("https://i.pinimg.com/736x/4b/66/59/4b665975dffe716b78dbd94d3ba56971.jpg");
-            background-repeat:no-repeat;
-            background-size:cover;
-            justify-content: center center;
+<head>
+    <title>Intellectual Revolution</title>
+    <style>
+        body {
+            background-image: url("https://i.pinimg.com/736x/4b/66/59/4b665975dffe716b78dbd94d3ba56971.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
             align-items: center;
-            margin:0px;
+            margin: 0;
             height: 100vh;
-            width:100vw;
-            overflow:hidden
+            width: 100vw;
+            overflow: hidden;
+            box-sizing: border-box;
         }
-        .container{
-            padding-top:200px;
-            padding-left:50px;
+        .container {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            max-width: 90%;
+            box-sizing: border-box;
         }
-        p:before{
-            content: '  \21AA';
+        p:before {
+            content: ' \21AA';
             color: brown;
         }
-        .box{
-            border:5px solid brown;
-            margin-right:400px;
-            padding:20px;
-            border-radius:20px;
+        .box {
+            border: 5px solid brown;
+            margin: auto;
+            padding: 20px;
+            border-radius: 20px;
+            box-sizing: border-box;
+            max-width: 80%;
         }
-        h1{
-            font-size:44px;
-            font-family:verdana;
+        h1 {
+            font-size: 44px;
+            font-family: verdana;
+            text-align: center;
         }
-        p{
-            font-size:29px;
+        p {
+            font-size: 29px;
+            text-align: justify;
         }
-        </style>
-    </head>
-    <body>
-     <div class="container">
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 34px;
+            }
+            p {
+                font-size: 24px;
+            }
+            .container {
+                padding: 10px;
+                max-width: 100%;
+            }
+            .box {
+                padding: 10px;
+                max-width: 100%;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
         <div class="box">
             <div class="header">
                 <h1><ins>Psychoanalysis</ins></h1>
@@ -47,7 +74,6 @@
                 <p>Psychoanalysis is a method developed by Sigmund Freud to understand the unconscious mind, where hidden desires and memories influence our thoughts and behaviors. It involves techniques like free association and dream analysis to bring these unconscious elements to light and help people understand their emotions and motivations better.</p>
             </div>
         </div>
-     </div>
-
-    </body>
+    </div>
+</body>
 </html>
