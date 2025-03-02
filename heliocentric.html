@@ -1,40 +1,60 @@
 <!doctype html>
 <html>
-    <head>
-        <title>Intellectual Revolution</title>
-        <style>
-            body{
-                background-image:url("https://media.giphy.com/media/mAvfw32pOP6K7PdTT4/giphy.gif?cid=ecf05e47ehw7jlth1jg1ob9dryw0hnw9yjbpfro638sexs0z&ep=v1_gifs_related&rid=giphy.gif&ct=g");
-                background-repeat:no-repeat;
-                background-size:cover;
-                justify-content: center center;
-                align-items: center;
-                margin:0px;
-                height: 100vh;
-                width:100vw;
-                overflow:hidden;
-            }
-            h1{
-                color:white;
-                font-family:verdana;
-            }
-            .paragraph{
-               margin-right:1000px;
-               padding-left:30px;
-            }
-            .container{
-                padding-top:100px;
-                margin-left:0px;
-            }
-        </style>
-    </head>
-    <body>
+<head>
+    <title>Intellectual Revolution</title>
+    <style>
+        body {
+            background-image: url("https://media.giphy.com/media/mAvfw32pOP6K7PdTT4/giphy.gif?cid=ecf05e47ehw7jlth1jg1ob9dryw0hnw9yjbpfro638sexs0z&ep=v1_gifs_related&rid=giphy.gif&ct=g");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: white;
+            font-family: verdana;
+            text-align: center;
+        }
+        .paragraph {
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .container {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            max-width: 90%;
+            box-sizing: border-box;
+        }
 
-        <div class="container" align="left">
-            <div class="paragraph">
-                <h1>A cosmological model in which the Sun is assumed to lie at or near a central point (e.g., of the solar system or of the universe) while the Earth and other bodies revolve around it.</h1>
-            </div>
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+            .container {
+                padding: 10px;
+                max-width: 100%;
+            }
+            .paragraph {
+                padding: 10px;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="paragraph">
+            <h1>A cosmological model in which the Sun is assumed to lie at or near a central point (e.g., of the solar system or of the universe) while the Earth and other bodies revolve around it.</h1>
         </div>
-
-    </body>
+    </div>
+</body>
 </html>
