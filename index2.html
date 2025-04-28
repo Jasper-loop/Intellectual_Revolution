@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Activity</title>
+</head>
+<body>
+	<script>
+		let make = parseFloat(prompt("Enter a guesing number: " + "\n" + "1-100"))
+		let enter = "";
+		let gues =7;
+		enter = parseFloat(prompt("Enter a number from 1 to 100"));
+		do{
+			try{
+				if(enter > make && enter < (make+20))throw "your number is high";
+				if(enter < make || enter > (make-20))throw "your number is low";
+				if(enter > (make+20))throw "your number is too high!";
+				if(enter > 100)throw "you should input a number that is less than or equal to 100";
+			}catch(err){
+				if(gues > 2 && gues < 8 && enter != make){
+					enter = parseFloat(prompt("Enter again  " + err + " :" + "\n" + "hints shows in " + (gues-2)));
+				}else{
+				enter = parseFloat(prompt("Enter again because " + err));
+			   }
+				if(gues == 3){
+					let again = parseFloat(prompt("You want to use hint?" + "\n" + "1-yes" + "\n" + "2-no"));
+					if(again == 1){
+						alert("The hidden number is less than " + (make-7) + " but not greater than " + (make+8));
+					}else if(again == 2){
+						alert("Ok!");
+					}
+				}
+			}
+			gues--;
+			if(enter == make){
+				alert("correct!");
+				break;
+			}
+		}while(gues != 1 && enter !=make);
+		if(gues === 1 && enter != make){
+			alert("Try again later!");
+		}
+	</script>
+</body>
+</html>
